@@ -1,0 +1,88 @@
+/*Aluno: Bruno Henrique Alves Santos; Turma: 93.313;*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    padding: 0;
+    gap: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-que-vai-ser-usada-pro-texto);
+    font-weight: 600;
+}
+:root{
+    --cor-de-fundo-da-body: linear-gradient(#1BF6FA,#0146c5, #0810eb);
+    --cor-branca: white;
+    --cor-preta: black;
+    --cor-do-botao: #1BFAB3;
+    --fonte-que-vai-ser-usada-pro-texto: "Lora", serif;
+}
+img{
+    max-width: 100%;
+    height: 30rem;
+}
+p{
+    align-items: center;
+}
+body{
+    display: flex;
+    background: var(--cor-de-fundo-da-body);
+    width: auto;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--cor-branca);
+    width: 70%;
+    height: 80%;
+    gap: 10%;
+    border-radius: 5em;
+    padding: 0 10%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+.container__principal{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    padding: 0% 1%;
+    align-items: center;
+    gap: 5em;
+    justify-content: space-between;
+}
+.container__butoes{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    justify-items: center;
+}
+.botao{
+    margin: 0 2em;
+    height: 50%;
+    width: 100%;
+    justify-content: space-around;
+    background-color: var(--cor-preta);
+    color: var(--cor-branca);
+    border: none;
+    border-radius: 0.1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.botao:hover{
+    zoom: (1,1);
+    background: var(--cor-do-botao);
+    border-radius: 1rem;
+}
+.texto-descricao{
+    width: 50%;
+    height: auto;
+}
+.imagem{
+    width: 50%;
+}
